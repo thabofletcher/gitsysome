@@ -1,30 +1,24 @@
 /* line 3, ../../sass/screen.scss */
 img {
-  height: auto;
   max-width: 100%;
+  height: auto;
 }
 
-/* line 8, ../../sass/screen.scss */
+/* line 9, ../../sass/screen.scss */
 .body-container {
   width: 666px;
   margin: 0 auto;
 }
 
-/* line 13, ../../sass/screen.scss */
+/* line 14, ../../sass/screen.scss */
 .match-maker-container {
   width: 666px;
   margin: 0 auto;
-  *zoom: 1;
-}
-/* line 38, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/utilities/general/_clearfix.scss */
-.match-maker-container:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
-/* line 20, ../../sass/screen.scss */
+/* line 19, ../../sass/screen.scss */
 .match-profile {
   float: left;
   width: 45%;
+  margin: 2.5%;
 }
