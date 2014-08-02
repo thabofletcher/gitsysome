@@ -10,6 +10,9 @@ exports.getMatch = function(ghName, cb) {
 
 	    	var users = JSON.parse(response.body).results
 
+	    	if (!users || !users.length)
+	    		cb({})
+	    	
 	    	console.log(users)
 
 	    	req.get('https://openapi.etsy.com/v2/users/' + users[0].user_id + '/profile?api_key=20dq535j4h6pc5qdbpqnqed4',function (error, response) {
