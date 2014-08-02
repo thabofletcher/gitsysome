@@ -5,7 +5,7 @@ var req = require('request')
 
 exports.getMatch = function(ghName, cb) {
 
-	req.get('https://openapi.etsy.com/v2/users?keywords=' + 'thabo' + '&api_key=20dq535j4h6pc5qdbpqnqed4',function (error, response) {
+	req.get('https://openapi.etsy.com/v2/users?keywords=' + ghName + '&api_key=20dq535j4h6pc5qdbpqnqed4',function (error, response) {
 	    if (!error && response.statusCode == 200) {
 	    	cb(response.body)
 	    }
