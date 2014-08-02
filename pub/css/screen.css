@@ -1,4 +1,10 @@
 /* line 3, ../../sass/screen.scss */
+.body-container {
+  width: 666px;
+  margin: 0 auto;
+}
+
+/* line 8, ../../sass/screen.scss */
 .match-maker-container {
   width: 666px;
   margin: 0 auto;
@@ -11,7 +17,7 @@
   clear: both;
 }
 
-/* line 10, ../../sass/screen.scss */
+/* line 15, ../../sass/screen.scss */
 .match-profile {
   float: left;
   width: 45%;

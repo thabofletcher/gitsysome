@@ -10,9 +10,13 @@ var credentials = {key: privateKey, cert: certificate};
 var express = require('express');
 var app = express();
 
-app.use(bodyparser())
+app.use(bodyparser.urlencoded({
+  extended: true
+}));
 
+app.get('/api', require('./api.js').post)
 app.post('/api', require('./api.js').post)
+app.get('/test', require('./api.js').test)
 app.use('/', express.static(__dirname + '/pub'))
 
 var httpServer = http.createServer(app);
