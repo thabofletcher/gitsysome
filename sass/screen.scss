@@ -1,9 +1,10 @@
 @import 'compass';
 
 img {
-  height: auto;
   max-width: 100%;
-}
+  height: auto;
+
+ }
 
 .body-container {
   width: 666px;
@@ -13,14 +14,12 @@ img {
 .match-maker-container {
   width: 666px;
   margin: 0 auto;
-  @include pie-clearfix;
-
 }
 
 .match-profile {
   float: left;
   width: 45%;
-
+  margin: 2.5%;
 }
 
 .match-profile--name {
