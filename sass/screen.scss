@@ -1,0 +1,44 @@
+<<<<<<< HEAD
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+      <div class="match-maker-container clearfix">
+        <div class="match-profile">
+          <img src="http://placehold.it/200x200" class="match-profile--image">
+          <h3 class="match-profile--name">My Name is</h3>
+          <p class="match-profile--description">I like ponies</p>
+          <a href="" class="match-profile--link">View My Profile</a>
+        </div>
+
+        <div class="match-profile">
+          <img src="http://placehold.it/200x200" class="match-profile--image">
+          <h3 class="match-profile--name">My Name is</h3>
+          <p class="match-profile--description">I like ponies</p>
+          <a href="" class="match-profile--link">View My Profile</a>
+        </div>
+      </div>
+
+.match-maker-container {
+}
+
+.match-profile {
+
+}
+
+.match-profile--name {
+
+}
+
+.match-profile--description {
+
+}
+
+.match-profile--link {
+
+}
+=======
+>>>>>>> d5f4e26bc1e16e64a208a744aa09e566a9a0f454
