@@ -1,5 +1,10 @@
 @import 'compass';
 
+img {
+  height: auto;
+  max-width: 100%;
+}
+
 .body-container {
   width: 666px;
   margin: 0 auto;
