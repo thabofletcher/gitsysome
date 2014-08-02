@@ -8,10 +8,7 @@
       $('#github-description').text(data.gh.location);
       $('#github-link').attr('href', data.gh.html_url);
 
-
-      $('#etsy-image').attr('src', data.etsy.results[0].avatar_url);
-      $('#etsy-name').text(data.etsy.results[0].login);
-      $('#etsy-description').text(data.etsy.results[0].location);
-      $('#etsy-link').attr('href', data.etsy.results[0].html_url);
+      etsytest = data.etsy
+      $('#etsy-image').attr('src', data.etsy.results[0].image_url_75x75);
     });
 }
