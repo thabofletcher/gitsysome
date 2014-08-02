@@ -5,6 +5,11 @@ var req = require('request')
 
 exports.getMatch = function(ghName) {
 
+	req.get('https://openapi.etsy.com/v2/users?keywords=' + 'thabo' + '&api_key=20dq535j4h6pc5qdbpqnqed4',function (error, response, body) {
+	    if (!error && response.statusCode == 200) {
+	      //console.log(users.results[0]);
+	    }
+	})
 	// req.get('https://openapi.etsy.com/v2/users/etsystore?api_key=your_api_key')
 
 
