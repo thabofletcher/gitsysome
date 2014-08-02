@@ -21,11 +21,16 @@ exports.post = function(req, res) {
   request(options, function (error, response, body) {
     if (!error && response.statusCode == 200) {
       console.log(body);
-      res.json(JSON.parse(body));
+
+
+      var ghUser = JSON.parse(body)
+      var go = {gh : ghUser}
+      etsy.getMatch(ghUser.login, function(etsyobj) {
+        go.etsy = etsyobj
+        res.json(go)
+      });
+
+      
     }
   });
-}
-
-exports.test = function(req, res) {
-	etsy.getMatch('thabofletcher');
 }
