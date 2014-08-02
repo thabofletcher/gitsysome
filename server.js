@@ -13,7 +13,7 @@ var app = express();
 app.use(bodyparser())
 
 app.post('/api', require('./api.js').post)
-app.use('/', express.static(__dirname + '/content'))
+app.use('/', express.static(__dirname + '/pub'))
 
 var httpServer = http.createServer(app);
 var httpsServer = https.createServer(credentials, app);
