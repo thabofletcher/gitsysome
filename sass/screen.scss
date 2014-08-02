@@ -1,7 +1,15 @@
+@import 'compass';
+
 .match-maker-container {
+  width: 666px;
+  margin: 0 auto;
+  @include pie-clearfix;
+
 }
 
 .match-profile {
+  float: left;
+  width: 45%;
 
 }
 
