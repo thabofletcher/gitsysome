@@ -7,6 +7,10 @@ var gitsysome = new fb('https://gitsysome.firebaseio.com/');
 var etsy = require('./etsy.js')
 
 
-exports.post = function(req, res) {
+exports.test = function(req, res) {
 	etsy.getMatch('thabofletcher');
+}
+
+exports.post = function(req, res) {
+	
 }
